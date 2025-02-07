@@ -1,0 +1,50 @@
+Data Preprocessing Report
+
+Introduction
+
+Data preprocessing is a crucial step in machine learning, ensuring that the dataset is clean and well-prepared for modeling. This report outlines the preprocessing steps applied to a dataset, including handling missing values, feature scaling, encoding categorical variables, and data visualization.
+
+1. Handling Missing Values
+
+Missing values in a dataset can introduce bias and reduce the performance of a model. In this dataset, the following approaches were used to handle missing values:
+
+Age column: Imputed using the mean value.
+
+Salary column: Imputed using the median value.
+
+Experience column: Imputed using the mode (most frequently occurring value).
+
+After applying these imputation techniques, the dataset no longer contained missing values.
+
+2. Feature Scaling
+
+Feature scaling is necessary to ensure that numerical features contribute equally to the model. Two types of scaling techniques were used:
+
+Min-Max Scaling: Normalized values between 0 and 1 using the formula:
+
+Applied to Age and Salary columns.
+
+Z-score Standardization: Standardized values with mean 0 and standard deviation 1 using:
+
+Applied to Age and Salary columns after Min-Max scaling.
+
+3. Encoding Categorical Variables
+
+Machine learning algorithms require numerical representations of categorical variables. The following encoding methods were used:
+
+One-Hot Encoding: Applied to the Education_Level column, generating separate binary columns for each category.
+
+Label Encoding: Applied to the City column, converting categorical values into numerical labels.
+
+4. Data Visualization
+
+Two visualization techniques were used to explore relationships between numerical features:
+
+Correlation Heatmap: Used to visualize correlations between numerical variables. The heatmap helped identify relationships among features, providing insights into data dependencies.
+
+Pair Plots: Used to visualize pairwise relationships in the dataset, allowing for the detection of patterns and potential outliers.
+
+Conclusion
+
+The preprocessing steps applied in this report ensured that the dataset was clean, normalized, and properly formatted for further analysis. Handling missing values, scaling numerical features, encoding categorical variables, and visualizing data patterns improved the dataset’s quality, setting a solid foundation for machine learning modeling.
+
